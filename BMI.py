@@ -3,8 +3,6 @@ import streamlit as st
 def BMI計算():
     high = st.number_input("身高為(公分)：", min_value=0.0)
     weight = st.number_input("體重為(公斤)：", min_value=0.0)
-
-    if st.button("計算 BMI"):
         if high <= 0:
             st.warning("身高必須大於 0")
             return
@@ -24,3 +22,4 @@ def BMI計算():
             st.write("肥胖")
 
 BMI計算()
+
